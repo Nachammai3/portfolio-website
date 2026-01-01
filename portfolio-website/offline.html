@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline - Portfolio</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #00f3ff;
+            text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+        }
+        p {
+            color: #888;
+        }
+        .retry-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: transparent;
+            border: 2px solid #00f3ff;
+            color: #00f3ff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .retry-btn:hover {
+            background: #00f3ff;
+            color: #0a0a0a;
+            box-shadow: 0 0 15px #00f3ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>You are Offline</h1>
+    <p>Please check your internet connection and try again.</p>
+    <button class="retry-btn" onclick="window.location.reload()">Retry</button>
+</body>
+</html>
